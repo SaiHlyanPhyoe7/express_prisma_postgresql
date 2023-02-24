@@ -58,7 +58,7 @@ app.post(`/post`,async(req,res)=>{
 })
 
 // update post
-app.put('/post/publish/:id',async (req,res)=>{
+app.put(`/post/publish/:id`,async (req,res)=>{
 	const {id} = req.params
 	const post = await prisma.post.update({
 		where: {id: Number(id)},

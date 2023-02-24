@@ -25,3 +25,5 @@ model Post {
   author    User?   @relation(fields: [authorId], references: [id])
   authorId  Int?
 }
+
+// prisma studio for gui
